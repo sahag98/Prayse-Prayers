@@ -16,8 +16,8 @@ const Navbar = () => {
       <Image
         src={
           theme === "dark" || theme === undefined
-            ? "/prayse-dark-logo.png"
-            : "/prayse-logo.png"
+            ? "/prayse-dark.png"
+            : "/prayse-light.png"
         }
         alt="Prayse logo"
         width={500}
