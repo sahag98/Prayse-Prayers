@@ -12,7 +12,7 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <nav className="flex px-4 bg-background py-2 justify-between items-center border shadow-md rounded-2xl w-full lg:w-1/3 md:w-1/2">
+    <nav className="flex px-4 bg-background py-0 justify-between items-center border shadow-md rounded-2xl w-full lg:w-1/3 md:w-1/2">
       <Image
         src={
           theme === "dark" || theme === undefined

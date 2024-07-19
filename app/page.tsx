@@ -9,13 +9,6 @@ import { useMutation } from "convex/react";
 import { api } from "@/convex/_generated/api";
 
 export default async function Home() {
-  const res = await fetch(
-    "https://bible-api.com/?random=verse&translation=kjv"
-  );
-
-  const verse = await res.json();
-
-  console.log("verse: ", verse.text);
   return (
     <main className="flex dark:bg-dot-[#292828] bg-dot-[#cfcfcf] min-h-screen relative flex-col items-center py-8 lg:px-44 md:px-32 sm:px-20 px-4">
       <Navbar />

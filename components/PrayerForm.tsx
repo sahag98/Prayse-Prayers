@@ -47,7 +47,7 @@ const PrayerForm = () => {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="md:w-1/2 space-y-3 w-full"
+        className="md:w-1/2 lg:w-1/3 space-y-3 w-full"
       >
         <FormField
           control={form.control}

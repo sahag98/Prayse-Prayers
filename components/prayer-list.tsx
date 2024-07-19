@@ -10,7 +10,8 @@ import {
 import React from "react";
 import { TbBible } from "react-icons/tb";
 import { PiHandsPrayingLight } from "react-icons/pi";
-import { AnimatedModalDemo } from "./AnimatedModal";
+import { AlertDialogDemo } from "./bible-modal";
+
 const PrayerList = (props: {
   preloadedPrayers: Preloaded<typeof api.prayer.getAllPrayers>;
 }) => {
@@ -31,9 +32,10 @@ const PrayerList = (props: {
             <PiHandsPrayingLight
               onClick={() => increasePrayerCount({ prayer_id: prayer._id })}
               className="self-end cursor-pointer text-primary/50 hover:text-primary hover:scale-110 transition-all"
-              size={30}
+              size={34}
             />
-            <AnimatedModalDemo verse={prayer.bibleVerse} />
+            <AlertDialogDemo verse={prayer.bibleVerse} />
+            {/* <AnimatedModalDemo verse={prayer.bibleVerse} /> */}
             {/* <TbBible
               className="self-end ml-1 cursor-pointer text-primary/50 hover:text-primary hover:scale-110 transition-all"
               size={30}
