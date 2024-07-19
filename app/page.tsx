@@ -13,7 +13,7 @@ export default async function Home() {
     <main className="flex dark:bg-dot-[#292828] bg-dot-[#cfcfcf] min-h-screen relative flex-col items-center py-8 lg:px-44 md:px-32 sm:px-20 px-4">
       <Navbar />
 
-      <h1 className="font-bold mt-20 mb-10 text-5xl tracking-wide">
+      <h1 className="font-bold mt-20 mb-5 text-5xl tracking-wide">
         How Can We Pray For You?
       </h1>
       <PrayerForm />

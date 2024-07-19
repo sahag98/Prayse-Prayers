@@ -12,18 +12,20 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <nav className="flex px-4 bg-background py-0 justify-between items-center border shadow-md rounded-2xl w-full lg:w-1/3 md:w-1/2">
-      <Image
-        src={
-          theme === "dark" || theme === undefined
-            ? "/prayse-dark.png"
-            : "/prayse-light.png"
-        }
-        alt="Prayse logo"
-        width={500}
-        height={500}
-        className="w-14 h-14"
-      />
+    <nav className="flex fixed top-3 px-4 bg-background py-0 justify-between items-center border shadow-md rounded-2xl w-full lg:w-1/3 md:w-1/2">
+      <Link href={"/"}>
+        <Image
+          src={
+            theme === "dark" || theme === undefined
+              ? "/prayseDark.png"
+              : "/prayse-light.png"
+          }
+          alt="Prayse logo"
+          width={500}
+          height={500}
+          className="w-14 h-14"
+        />
+      </Link>
       <section className="flex items-center gap-3">
         <Link href={"https://apps.apple.com/us/app/prayseapp/id6443480347"}>
           <RiAppleLine color="#d2d2d2" size={28} />

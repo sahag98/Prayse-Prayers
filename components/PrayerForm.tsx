@@ -65,7 +65,11 @@ const PrayerForm = () => {
             </FormItem>
           )}
         />
-        <Button className="w-full" size={"lg"} type="submit">
+        <Button
+          className="w-full text-base font-bold"
+          size={"lg"}
+          type="submit"
+        >
           Submit
         </Button>
       </form>
