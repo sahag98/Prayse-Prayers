@@ -12,7 +12,7 @@ const Navbar = () => {
   const { theme, setTheme } = useTheme();
 
   return (
-    <nav className="flex fixed top-3 px-4 bg-background py-0 justify-between items-center border shadow-md rounded-2xl w-full lg:w-1/3 md:w-1/2">
+    <nav className="flex fixed top-4 px-4 bg-background py-0 justify-between items-center border shadow-md rounded-2xl w-[90%] lg:w-1/3 md:w-1/2">
       <Link href={"/"}>
         <Image
           src={
