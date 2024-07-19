@@ -38,7 +38,7 @@ const Navbar = () => {
         <Link href={"https://www.instagram.com/prayse.app/"}>
           <Instagram color="#d2d2d2" />
         </Link>
-        <ModeToggle />
+        {/* <ModeToggle /> */}
       </section>
     </nav>
   );

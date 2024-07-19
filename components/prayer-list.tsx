@@ -27,13 +27,18 @@ const PrayerList = (props: {
         >
           <p className="">{prayer.title}</p>
 
-          <section className="flex items-center gap-2 self-end">
-            <p className="">{prayer?.count}</p>
-            <PiHandsPrayingLight
+          <section className="flex items-center  gap-2 self-end">
+            <p className="font-bold">{prayer?.count}</p>
+            <div
               onClick={() => increasePrayerCount({ prayer_id: prayer._id })}
-              className="self-end cursor-pointer text-primary/50 hover:text-primary hover:scale-110 transition-all"
-              size={34}
-            />
+              className="dark:bg-[#212121] bg-gray-500 w-12 h-12 p-2 flex items-center hover:scale-110 transition-all justify-center rounded-full"
+            >
+              <PiHandsPrayingLight
+                className="cursor-pointer text-white dark:text-primary/50  hover:dark:text-primary "
+                size={25}
+              />
+            </div>
+
             <AlertDialogDemo verse={prayer.bibleVerse} />
             {/* <AnimatedModalDemo verse={prayer.bibleVerse} /> */}
             {/* <TbBible
